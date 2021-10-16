@@ -10,6 +10,7 @@ import {
   Link
 } from "react-router-dom";
 import Detail from './components/Detail';
+import LogIn from './components/LogIn';
 
 const App = () => {
   return (
@@ -18,6 +19,10 @@ const App = () => {
       <Header />
       <Switch>
 
+      <Route path="/login">
+          <LogIn />
+      </Route>
+
         <Route path="/detail">
           <Detail />
         </Route>
@@ -25,7 +30,7 @@ const App = () => {
         <Route path="/">
             <Home />
         </Route>
-        
+
       </Switch>
     </Router>
     </div>
